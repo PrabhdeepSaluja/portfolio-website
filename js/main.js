@@ -850,6 +850,30 @@
         clBackToTop();
 
     })();
-        
-        
+
 })(jQuery);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const filterButtons = document.querySelectorAll(".filter-buttons .filter");
+    const portfolioItems = document.querySelectorAll(".portfolio-items .col-md-4");
+
+    filterButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const filterValue = button.getAttribute("data-filter");
+
+            // Remove 'active' class from all buttons and add it to the clicked button
+            filterButtons.forEach(btn => btn.classList.remove("active"));
+            button.classList.add("active");
+
+            // Show/hide portfolio items based on the filter
+            portfolioItems.forEach(item => {
+                if (filterValue === "all" || item.classList.contains(filterValue)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        });
+    });
+});
+

@@ -8695,6 +8695,7 @@ textarea.form-control {
 .block-7 {
   margin-bottom: 30px;
   padding: 30px;
+  transition: background-color 0.3s ease;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
   -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
@@ -8716,11 +8717,11 @@ textarea.form-control {
     .block-7 .price sup {
       font-size: 20px;
       top: -.7em;
-      color: #ffba00; }
+      color: #000; }
     .block-7 .price .number {
       font-size: 40px;
       font-weight: 500;
-      color: #ffba00; }
+      color: #000; }
   .block-7 .excerpt {
     margin-bottom: 20px;
     color: gray; }
@@ -8737,6 +8738,10 @@ textarea.form-control {
       color: #b3b3b3; }
       .block-7 .pricing-text li strong {
         color: #000; }
+        .block-7:hover {
+          background-color: #FFBA00; 
+          color: #ffffff; 
+        }
 
 .block-8 .accordion-item .heading {
   font-size: 16px;
@@ -9358,10 +9363,6 @@ textarea.form-control {
   transition: all 0.5s ease-in-out;
 }
 
-.header-menu-toggle.opaque {
-  background-color: #000000;
-}
-
 .header-menu-toggle.opaque .header-menu-text {
   background-color: #000000;
 }
@@ -9434,4 +9435,19 @@ textarea.form-control {
   .header-menu-text {
       display: none;
   }
+}
+
+.portfolio-heading{
+  background-color: #FFBA00; 
+  padding: 4px;
+}
+
+.rounded-circle {
+    border: 10px solid #FFBA00; 
+    border-radius: 70%;
+    display: block; 
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
 }
