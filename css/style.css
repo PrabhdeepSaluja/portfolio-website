@@ -9158,21 +9158,31 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 
-    .filter-buttons {
-      text-align: center;
-      margin-bottom: 20px;
+  /* Default styling for filter buttons */
+.filter-buttons {
+  overflow-y: hidden; 
+  white-space: nowrap; 
+  margin-bottom: 1rem; 
+  cursor: pointer;
+}
+
+.filter {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+.filter.active {
+  color: #FFBA00;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .filter-buttons {
+      overflow-y: auto; 
+      max-height: 60px; 
+      padding-right: 1rem; 
   }
-  
-  .filter-buttons span {
-      cursor: pointer;
-      margin-right: 20px;
-      font-size: 18px;
-      color: #333;
-  }
-  
-  .filter-buttons span.active {
-      color: #ffba00; /* Change to your desired active color */
-  }
+}
   
   /* ------------------------------------------------------------------- 
  * ## main navigation 
@@ -9450,4 +9460,12 @@ textarea.form-control {
     height: auto;
     width: 100%;
     object-fit: cover;
+}
+
+.border-left {
+  border-left: 8px solid #ffba00; /* Adjust color and thickness as needed */
+}
+
+.border-bottom {
+  border-bottom: 8px solid #ffba00; /* Adjust color and thickness as needed */
 }
