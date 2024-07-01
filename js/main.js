@@ -405,6 +405,19 @@ document.addEventListener("DOMContentLoaded", function() {
    });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.header-menu-toggle');
+    const navClose = document.querySelector('.header-nav__close');
+
+    navClose.addEventListener('click', function() {
+        menuToggle.style.display = 'flex';
+    });
+
+    menuToggle.addEventListener('click', function() {
+        menuToggle.style.display = 'none';
+    });
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     // Initialize all accordions
     var accordions = document.querySelectorAll('.accordion');
