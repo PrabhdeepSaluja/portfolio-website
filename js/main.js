@@ -407,15 +407,54 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.header-menu-toggle');
+    const navItems = document.querySelectorAll('.header-nav__list li a');
     const navClose = document.querySelector('.header-nav__close');
+    const header = document.querySelector('.s-header');
 
-    navClose.addEventListener('click', function() {
+    // Function to show the hamburger icon
+    function showHamburgerIcon() {
         menuToggle.style.display = 'flex';
+    }
+
+    // Function to hide the hamburger icon
+    function hideHamburgerIcon() {
+        menuToggle.style.display = 'none';
+    }
+
+    // Show hamburger icon initially when page loads
+    showHamburgerIcon();
+
+    // Add event listeners to each nav item
+    navItems.forEach(item => {
+        item.addEventListener('click', function() {
+            // Hide hamburger icon when a nav item is clicked
+            hideHamburgerIcon();
+        });
     });
 
-    menuToggle.addEventListener('click', function() {
-        menuToggle.style.display = 'none';
+    // Add event listener to close button
+    navClose.addEventListener('click', function() {
+        // Show hamburger icon when the close button is clicked
+        showHamburgerIcon();
     });
+
+    // Add scroll event listener to show/hide hamburger icon based on scroll position
+    window.addEventListener('scroll', function() {
+        if (window.scrollY >= 0) {
+            // Show hamburger icon when scrolled
+            showHamburgerIcon();
+        } else {
+            // Hide hamburger icon when at the top of the page
+            if (!header.classList.contains('nav-open')) {
+                hideHamburgerIcon();
+            }
+        }
+    });
+
+    // Additional check on page load in case of initial scroll position
+    if (window.scrollY > 0) {
+        showHamburgerIcon();
+    }
 });
 
 document.addEventListener('DOMContentLoaded', function () {
