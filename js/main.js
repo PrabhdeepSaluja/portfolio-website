@@ -414,3 +414,40 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
+
+  $(document).ready(function() {
+    // Smooth scrolling when clicking on links with class 'smoothscroll'
+    $('.smoothscroll').on('click', function(event) {
+        if (this.hash !== '') {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                window.location.hash = hash;
+            });
+        }
+    });
+
+    // Toggle mobile navigation
+    $('.header-nav__toggle').on('click', function() {
+        $('.header-nav__list').toggleClass('open');
+        $(this).toggleClass('open');
+    });
+
+    // Close mobile navigation on link click
+    $('.header-nav__list li').on('click', function() {
+        $('.header-nav__list').removeClass('open');
+        $('.header-nav__toggle').removeClass('open');
+    });
+
+    // Close mobile navigation when clicking outside of it
+    $(document).on('click', function(event) {
+        if (!$(event.target).closest('.header-nav__container').length) {
+            $('.header-nav__list').removeClass('open');
+            $('.header-nav__toggle').removeClass('open');
+        }
+    });
+});

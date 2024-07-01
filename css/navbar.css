@@ -15,28 +15,13 @@
  * ## main navigation 
  * ------------------------------------------------------------------- */
  .header-nav {
-  /* background: #; */
-  color: rgba(255, 255, 255, 0.25);
-  font-family: "montserrat-light", sans-serif;
-  font-size: 1.3rem;
-  line-height: 1.846;
-  padding: 3.6rem 3rem 3.6rem 3.6rem;
-  height: 100%;
-  width: 280px;
   position: fixed;
-  right: 0;
   top: 0;
-  z-index: 700;
-  overflow-y: auto;
-  overflow-x: hidden;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  transform: translateX(100%);
-  visibility: hidden;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Adjust as needed */
+  z-index: 1000; /* Ensure it's above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
 }
 
 .header-nav a, .header-nav a:visited {
