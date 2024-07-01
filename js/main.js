@@ -432,7 +432,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Toggle mobile navigation
-    $('.header-nav__toggle').on('click', function() {
+    $('.header-nav__close').on('click', function() {
         $('.header-nav__list').toggleClass('open');
         $(this).toggleClass('open');
     });
@@ -440,14 +440,14 @@ document.addEventListener('DOMContentLoaded', function () {
     // Close mobile navigation on link click
     $('.header-nav__list li').on('click', function() {
         $('.header-nav__list').removeClass('open');
-        $('.header-nav__toggle').removeClass('open');
+        $('.header-nav__close').removeClass('open');
     });
 
     // Close mobile navigation when clicking outside of it
     $(document).on('click', function(event) {
-        if (!$(event.target).closest('.header-nav__container').length) {
+        if (!$(event.target).closest('.header-nav__content').length) {
             $('.header-nav__list').removeClass('open');
-            $('.header-nav__toggle').removeClass('open');
+            $('.header-nav__close').removeClass('open');
         }
     });
 });

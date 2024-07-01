@@ -48,7 +48,7 @@
 	      </div>
 	    </div>
 	  </nav> -->
-    <header class="s-header">
+    <header class="s-header" style="background-color: #000; position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
 
       <div class="header-logo">
           <a class="site-logo" href="index.html">
@@ -56,55 +56,38 @@
           </a>
       </div>
 
-      <nav class="header-nav">
+      <nav class="header-nav" style="z-index: 999;">
+        <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+        <div class="header-nav__content">
+            <h3>Array bin</h3>
+            <ul class="header-nav__list">
+                <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
+                <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+                <li><a class="smoothscroll" href="#portfolio" title="portfolio">Portfolio</a></li>
+                <li><a class="smoothscroll" href="#pricing" title="pricing">Pricing</a></li>
+                <li><a class="smoothscroll" href="#testimonial" title="testimonial">Testimonial</a></li>
+                <li><a class="smoothscroll" href="#faq" title="faq">FAQ</a></li>
+            </ul>
+            <p>Crafting innovative web solutions tailored to elevate your digital presence.</p>
+            <ul class="header-nav__social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+            </ul>
+        </div> <!-- end header-nav__content -->
+    </nav>
 
-          <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+    <a class="header-menu-toggle" href="#0" style="color: #fff; z-index: 999;">
+      <span class="header-menu-icon" style="color: #fff;"></span>
+    </a>
 
-          <div class="header-nav__content">
-              <h3>Array bin</h3>
-              
-              <ul class="header-nav__list">
-                  <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                  <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-                  <li><a class="smoothscroll"  href="#portfolio" title="portfolio">Portfolio</a></li>
-                  <li><a class="smoothscroll"  href="#pricing" title="works">Pricing</a></li>
-                  <li><a class="smoothscroll"  href="#testimonial" title="testimonial">Testimonial</a></li>
-                  <li><a class="smoothscroll"  href="#faq" title="faq">FAQ</a></li>
-              </ul>
-  
-              <p>Crafting innovative web solutions tailored to elevate your digital presence.</p>
-  
-              <ul class="header-nav__social">
-                  <li>
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li>
-                      <a href="#"><i class="fa fa-instagram"></i></a>
-                  </li>
-                  <li>
-                      <a href="#"><i class="fa fa-behance"></i></a>
-                  </li>
-                  <li>
-                      <a href="#"><i class="fa fa-dribbble"></i></a>
-                  </li>
-              </ul>
-
-          </div> <!-- end header-nav__content -->
-
-      </nav>
-
-      <a class="header-menu-toggle" href="#0">
-          <span class="header-menu-icon"></span>
-      </a>
-
-  </header>
+    </header>
     <!-- END nav -->
 
     <!-- Start Home -->
-    <section class="relative overflow-hidden" id="home">
+    <section class="relative overflow-hidden" style="margin-top: 100px;" id="home">
       <div class="container">
           <div class="grid grid-cols-1">
               <div class="flex flex-col flex-wrap items-center lg:flex-row">
@@ -178,7 +161,7 @@
     </section>
     
   
-    <section class="ftco-section ftco-work" id="portfolio">
+    <section style="margin-top: 24px; background-color: #fafafa !important;" id="portfolio">
       <div class="container-fluid">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
@@ -278,7 +261,7 @@
     </section>
 
   
-    <section class="ftco-section bg-light" id="pricing">
+    <section style="margin-top: 24px; background-color: #fafafa !important;" id="pricing">
     	<div class="container">
     		<div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
@@ -369,7 +352,7 @@
     	</div>
     </section>
 
-		<section class="ftco-section testimony-section bg-light">
+		<section class="ftco-section testimony-section" id="testimonial">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 text-center heading-section ftco-animate">
