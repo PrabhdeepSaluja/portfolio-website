@@ -3187,6 +3187,19 @@ input[type="button"].btn-block {
   .nav-link.disabled {
     color: #6c757d; }
 
+  .navbar-nav .nav-item .nav-link:hover,
+  .navbar-nav .nav-item.active .nav-link {
+    color: #ffba00; 
+  }
+
+  .navbar-toggler {
+    border-color: #ffba00;
+  }
+  
+  .navbar-toggler span {
+    color: #ffba00;
+  }
+
 .nav-tabs {
   border-bottom: 1px solid #dee2e6; }
   .nav-tabs .nav-item {
@@ -9468,4 +9481,18 @@ textarea.form-control {
 
 .border-bottom {
   border-bottom: 8px solid #ffba00; /* Adjust color and thickness as needed */
+}
+
+.circle-container {
+  width: 300px; /* Adjust the size as needed */
+  height: 300px; /* Adjust the size as needed */
+  border-radius: 50%; /* Makes the container circular */
+  overflow: hidden; /* Ensures the image stays within the circle */
+  border: 6px solid #ffba00; /* Thin border with color #333 */
+}
+
+.circle-container img {
+  display: block;
+  width: 100%; /* Ensures the image takes up the entire circle */
+  height: 90%; /* Maintains aspect ratio of the image */
 }
