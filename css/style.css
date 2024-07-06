@@ -9630,3 +9630,68 @@ textarea.form-control {
   display: none;
   font-size: 16px;
   font-weight: bold; }
+
+  .wrapper {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    /* border-radius: 180px; */
+    padding: 2.5rem;
+    /* background: #ddd; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  }
+  .item {
+    animation: animate 25s alternate linear infinite;
+  }
+  .container:hover .item {
+    animation-play-state: paused;
+  }
+  @keyframes animate {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-1100px, 0, 0);
+    }
+  }
+  @media (max-width:767px) {
+    .slider-area h2 {
+      font-size: 30px;
+    }
+    .wrapper {
+      width: 95%;
+      border-radius: 0;
+      padding: 0;
+    }
+  }
+  
+  @keyframes scroll{
+    0%{
+      transform: translateX(0);
+
+    }
+    100%{
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+
+  .slider{
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+  }
+
+  .slider .slide-track{
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px *14);
+  }
+
+  .slider .slide{
+    height: 100px;
+    width: 250px;
+
+  }

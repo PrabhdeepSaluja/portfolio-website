@@ -635,7 +635,8 @@ video {
 }
 
 .btn-purple:hover{
-  background-color: rgb(153 79 245 / 0.8);
+  background-color: #ffc019;
+  color: #fff;
 }
 
 .btn-outline-white{
