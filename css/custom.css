@@ -626,9 +626,11 @@ video {
 
 .btn-purple{
   --tw-bg-opacity: 1;
-  background-color: rgb(153 79 245 / var(--tw-bg-opacity));
+  background-color: #ffba00;
+  /* background-color: rgb(153 79 245 / var(--tw-bg-opacity)); */
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: #000;
+  /* color: rgb(255 255 255 / var(--tw-text-opacity)); */
   transition-duration: 300ms;
 }
 
