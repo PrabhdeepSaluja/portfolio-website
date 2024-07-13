@@ -624,7 +624,7 @@ video {
   font-weight: 600;
 }
 
-.btn-purple{
+.btn-orange{
   --tw-bg-opacity: 1;
   background-color: #ffba00;
   /* background-color: rgb(153 79 245 / var(--tw-bg-opacity)); */
@@ -634,8 +634,8 @@ video {
   transition-duration: 300ms;
 }
 
-.btn-purple:hover{
-  background-color: #ffc019;
+.btn-orange:hover{
+  background-color: #ff6c00;
   color: #fff;
 }
 
@@ -1297,12 +1297,12 @@ video {
   background-color: rgb(119 128 161 / 0.05);
 }
 
-.bg-purple{
+.bg-orange{
   --tw-bg-opacity: 1;
   background-color: rgb(153 79 245 / var(--tw-bg-opacity));
 }
 
-.bg-purple\/10{
+.bg-orange\/10{
   background-color: rgb(153 79 245 / 0.1);
 }
 
@@ -1622,7 +1622,7 @@ video {
   color: rgb(119 128 161 / var(--tw-text-opacity));
 }
 
-.text-purple{
+.text-orange{
   --tw-text-opacity: 1;
   color: rgb(153 79 245 / var(--tw-text-opacity));
 }
@@ -1720,7 +1720,7 @@ video {
   background-color: rgb(255 255 255 / 0.9);
 }
 
-.hover\:text-purple:hover{
+.hover\:text-orange:hover{
   --tw-text-opacity: 1;
   color: rgb(153 79 245 / var(--tw-text-opacity));
 }
