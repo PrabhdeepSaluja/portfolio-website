@@ -276,7 +276,7 @@ body {
 @media screen and (max-width: 640px) {
   .plans {
     max-width: 480px;
-    width: 90%;
+    width: 100%;
   }
 
   .planItem__container {
@@ -295,3 +295,13 @@ body {
     --baseSize: 14px;
   }
 }
+
+@media (max-width: 768px) {
+  .planItem {
+    margin: 0 auto; 
+    width: 90%; 
+    max-width: 400px; 
+    padding: 2rem;
+  }
+}
+
